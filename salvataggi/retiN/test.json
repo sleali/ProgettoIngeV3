@@ -1,3 +1,13 @@
-{"posto":{"ID":1},"transizione":{"ID":0},"verso":true}
-{"posto":{"ID":2},"transizione":{"ID":0},"verso":true}
-{"posto":{"ID":3},"transizione":{"ID":0},"verso":false}
+{"posto":{"ID":1},"transizione":{"ID":1},"verso":true}
+{"posto":{"ID":1},"transizione":{"ID":3},"verso":false}
+{"posto":{"ID":4},"transizione":{"ID":1},"verso":false}
+{"posto":{"ID":4},"transizione":{"ID":3},"verso":true}
+{"posto":{"ID":2},"transizione":{"ID":3},"verso":false}
+{"posto":{"ID":2},"transizione":{"ID":1},"verso":true}
+{"posto":{"ID":3},"transizione":{"ID":2},"verso":true}
+{"posto":{"ID":3},"transizione":{"ID":4},"verso":false}
+{"posto":{"ID":5},"transizione":{"ID":2},"verso":false}
+{"posto":{"ID":5},"transizione":{"ID":4},"verso":true}
+{"posto":{"ID":2},"transizione":{"ID":4},"verso":false}
+{"posto":{"ID":2},"transizione":{"ID":2},"verso":true}
+{"posto":{"ID":6},"transizione":{"ID":4},"verso":true}
