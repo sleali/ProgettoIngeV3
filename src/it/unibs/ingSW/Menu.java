@@ -8,7 +8,32 @@ public class Menu
 		int scelta = 0;
 		do 
 		{
-			System.out.println("V3\n\nMenu principale [utente: configuratore]\n1) Gestione reti N \n2) Gestione reti PN \n\n0) Esci");
+			System.out.println("V3\n\nMenu principale\n1) Configuratore \n2) Fruitore \n\n0) Esci");
+			scelta = InputDati.leggiIntero("Selezionare una delle voci del menu:", 0, 2);
+			switch (scelta)
+			{
+				case 1: 
+					System.out.println("\n");
+					configuratore();
+					break;
+				case 2:
+					System.out.println("\n");
+					fruitore();
+					break;
+				default:
+					System.out.println("\n");
+					System.out.println("Uscita in corso...");
+					break;
+			}
+		} 
+		while (scelta != 0);
+	}
+	
+	public static void configuratore() throws Exception {
+		int scelta = 0;
+		do 
+		{
+			System.out.println("Menu principale [utente: configuratore]\n1) Gestione reti N \n2) Gestione reti PN \n\n0) Esci");
 			scelta = InputDati.leggiIntero("Selezionare una delle voci del menu:", 0, 2);
 			switch (scelta)
 			{
@@ -18,6 +43,28 @@ public class Menu
 					break;
 				case 2:
 					reti_petri();
+					break;
+				default:
+					System.out.println("Uscita in corso...");
+					break;
+			}
+		} 
+		while (scelta != 0);
+	}
+	
+	public static void fruitore(){
+		int scelta = 0;
+		do 
+		{
+			System.out.println("Menu principale [utente: fruitore]\n1) Simula Reti PN \n\n0) Esci");
+			scelta = InputDati.leggiIntero("Selezionare una delle voci del menu:", 0, 1);
+			switch (scelta)
+			{
+				case 1: 
+					SimulaRetePN rete = new SimulaRetePN();
+					rete.scegli();
+					rete.simula();
+					System.out.println("\n");
 					break;
 				default:
 					System.out.println("Uscita in corso...");
